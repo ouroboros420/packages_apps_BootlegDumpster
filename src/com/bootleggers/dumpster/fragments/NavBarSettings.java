@@ -34,6 +34,8 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 
+import com.bootleggers.dumpster.external.themebox.PulseSettings;
+
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto;
@@ -56,6 +58,11 @@ public class NavBarSettings extends SettingsPreferenceFragment
             default:
                 return false;
         }
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        PulseSettings.reset(mContext);
     }
 
     @Override
