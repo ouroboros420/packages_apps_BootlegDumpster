@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.banana.settings.fragments.ui;
+package com.bootleggers.dumpster.external.themebox;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -35,7 +35,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.banana.support.colorpicker.ColorPickerPreference;
+import com.bootleggers.support.colorpicker.ColorPickerPreference;
 
 public class PulseSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -254,6 +254,6 @@ public class PulseSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BANANADROID;
+        return MetricsProto.MetricsEvent.BOOTLEG;
     }
 }
